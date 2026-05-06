@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cantilever Mindset – Complete Manuscript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #faf9f6;
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            line-height: 1.5;
+            color: #1e1e1e;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            padding: 2rem 2rem 4rem;
+        }
+        /* Title page */
+        .title-page {
+            text-align: center;
+            margin: 4rem 0 6rem;
+            page-break-after: avoid;
+        }
+        .title-page h1 {
+            font-size: 2.8rem;
+            letter-spacing: -0.5px;
+            margin-bottom: 1rem;
+            font-weight: normal;
+        }
+        .title-page p {
+            font-size: 1.2rem;
+            color: #5a5a5a;
+            margin-top: 2rem;
+            font-style: italic;
+        }
+        /* Table of contents */
+        .toc {
+            margin: 3rem 0 4rem;
+            page-break-after: avoid;
+        }
+        .toc h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .toc ul {
+            list-style: none;
+            columns: 2;
+            column-gap: 2rem;
+        }
+        .toc li {
+            margin-bottom: 0.4rem;
+            font-size: 0.9rem;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #3a6ea5;
+        }
+        /* Daily pages */
+        .day {
+            page-break-before: always;
+            margin-bottom: 3rem;
+        }
+        .day-number {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #b0a790;
+            margin-bottom: 0.5rem;
+        }
+        .day-title {
+            font-size: 1.8rem;
+            font-weight: normal;
+            margin-bottom: 1rem;
+            border-left: 4px solid #c0a080;
+            padding-left: 1rem;
+        }
+        .day-content {
+            font-size: 1.05rem;
+        }
+        .day-content p {
+            margin-bottom: 1.2rem;
+        }
+        .takeaway {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e6e3dd;
+            font-style: italic;
+            color: #4a4a4a;
+        }
+        .modern-dilemma {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            background: #f4f2ee;
+            padding: 0.8rem 1rem;
+            border-left: 3px solid #c0a080;
+            color: #3a3a3a;
+        }
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            font-size: 0.8rem;
+            color: #aaa;
+            border-top: 1px solid #e6e3dd;
+            padding-top: 2rem;
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+                margin: 0;
+            }
+            .container {
+                max-width: 100%;
+                padding: 0.75in;
+                box-shadow: none;
+            }
+            .toc ul {
+                columns: 1;
+            }
+            .day {
+                page-break-before: always;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            .modern-dilemma {
+                background: #f4f2ee;
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- TITLE PAGE -->
+    <div class="title-page">
+        <h1>The Cantilever Mindset</h1>
+        <p>How to Solve Impossible Problems by Changing How You See Them</p>
+        <p style="margin-top: 3rem; font-size: 0.9rem;">A 100‑day journey – one page per day</p>
+    </div>
+
+    <!-- TABLE OF CONTENTS (generated) -->
+    <div class="toc">
+        <h2>Contents</h2>
+        <ul>
+            <li><a href="#day1">Day 1 – The Trap of the First Answer</a></li>
+            <li><a href="#day2">Day 2 – The Illusion of the Single Constraint</a></li>
+            <li><a href="#day3">Day 3 – Why "Bigger" Fails</a></li>
+            <li><a href="#day4">Day 4 – The Wall in Your Head</a></li>
+            <li><a href="#day5">Day 5 – Functional Fixedness</a></li>
+            <li><a href="#day6">Day 6 – How Rules Outlive Their Purpose</a></li>
+            <li><a href="#day7">Day 7 – The Expert's Curse</a></li>
+            <li><a href="#day8">Day 8 – Normalization Sickness</a></li>
+            <li><a href="#day9">Day 9 – The Five Biases (One Page)</a></li>
+            <li><a href="#day10">Day 10 – Your First Audit</a></li>
+            <li><a href="#day11">Day 11 – What Is a Path?</a></li>
+            <li><a href="#day12">Day 12 – Drawing Arrows</a></li>
+            <li><a href="#day13">Day 13 – The Load Path Mindset</a></li>
+            <li><a href="#day14">Day 14 – Hidden Loops</a></li>
+            <li><a href="#day15">Day 15 – The Missing Step</a></li>
+            <li><a href="#day16">Day 16 – Tracing a Physical System</a></li>
+            <li><a href="#day17">Day 17 – Tracing a Social System</a></li>
+            <li><a href="#day18">Day 18 – Tracing Your Own Habits</a></li>
+            <li><a href="#day19">Day 19 – The 30‑Second Test</a></li>
+            <li><a href="#day20">Day 20 – Failure Mode: Missing the Start</a></li>
+            <li><a href="#day21">Day 21 – The Constraint Spectrum</a></li>
+            <li><a href="#day22">Day 22 – Spotting a Physical Law</a></li>
+            <li><a href="#day23">Day 23 – Spotting a Social Rule</a></li>
+            <li><a href="#day24">Day 24 – Spotting a Self‑Limiting Belief</a></li>
+            <li><a href="#day25">Day 25 – The Auditing Questions</a></li>
+            <li><a href="#day26">Day 26 – The Loophole Mindset</a></li>
+            <li><a href="#day27">Day 27 – Roleplay: Traditionalist vs. Rebel</a></li>
+            <li><a href="#day28">Day 28 – Auditing Your Job</a></li>
+            <li><a href="#day29">Day 29 – The 'What If' Generation</a></li>
+            <li><a href="#day30">Day 30 – Pillar 2 Self‑Test</a></li>
+            <li><a href="#day31">Day 31 – Why Normalization Kills Solutions</a></li>
+            <li><a href="#day32">Day 32 – The Scaling Ladder</a></li>
+            <li><a href="#day33">Day 33 – Quadratic and Cubic Scaling</a></li>
+            <li><a href="#day34">Day 34 – The Rocket Problem</a></li>
+            <li><a href="#day35">Day 35 – Natural Analogs</a></li>
+            <li><a href="#day36">Day 36 – Reverse Scaling</a></li>
+            <li><a href="#day37">Day 37 – The 10× Question</a></li>
+            <li><a href="#day38">Day 38 – Scaling Time</a></li>
+            <li><a href="#day39">Day 39 – Scaling Money</a></li>
+            <li><a href="#day40">Day 40 – Practice: Feeding a Family</a></li>
+            <li><a href="#day41">Day 41 – Medium Is Not Material</a></li>
+            <li><a href="#day42">Day 42 – The Switch Matrix</a></li>
+            <li><a href="#day43">Day 43 – Biomimicry</a></li>
+            <li><a href="#day44">Day 44 – Cross‑Domain Transfer</a></li>
+            <li><a href="#day45">Day 45 – The Opposite Test</a></li>
+            <li><a href="#day46">Day 46 – Changing the Question</a></li>
+            <li><a href="#day47">Day 47 – Material Substitution</a></li>
+            <li><a href="#day48">Day 48 – Method Substitution</a></li>
+            <li><a href="#day49">Day 49 – Case Study: Apollo 13</a></li>
+            <li><a href="#day50">Day 50 – The 'How Would a Child Solve This?'</a></li>
+            <li><a href="#day51">Day 51 – The Boundary Fallacy</a></li>
+            <li><a href="#day52">Day 52 – Level 0: The Thing Itself</a></li>
+            <li><a href="#day53">Day 53 – Level 1: Direct Environment</a></li>
+            <li><a href="#day54">Day 54 – Level 2: Supporting System</a></li>
+            <li><a href="#day55">Day 55 – Level 3: Time (Before and After)</a></li>
+            <li><a href="#day56">Day 56 – Level 4: Stakeholders and Rules</a></li>
+            <li><a href="#day57">Day 57 – Level 5: Fundamental Purpose</a></li>
+            <li><a href="#day58">Day 58 – The 'Who Decided?' Question</a></li>
+            <li><a href="#day59">Day 59 – Case Study: Traffic Jam</a></li>
+            <li><a href="#day60">Day 60 – Pillar 5 Self‑Test</a></li>
+            <li><a href="#day61">Day 61 – Trace the Path (Review)</a></li>
+            <li><a href="#day62">Day 62 – Audit Constraints (Review)</a></li>
+            <li><a href="#day63">Day 63 – Scale the Magnitude (Review)</a></li>
+            <li><a href="#day64">Day 64 – Switch the Medium (Review)</a></li>
+            <li><a href="#day65">Day 65 – Expand the Boundary (Review)</a></li>
+            <li><a href="#day66">Day 66 – The Five‑Pillar Daily Ritual</a></li>
+            <li><a href="#day67">Day 67 – The Failure Log</a></li>
+            <li><a href="#day68">Day 68 – The Question Bank</a></li>
+            <li><a href="#day69">Day 69 – Teaching One Pillar</a></li>
+            <li><a href="#day70">Day 70 – The Blink Test</a></li>
+            <li><a href="#day71">Day 71 – The Meta‑Framework</a></li>
+            <li><a href="#day72">Day 72 – When to Break the Framework</a></li>
+            <li><a href="#day73">Day 73 – The 100‑Day Review</a></li>
+            <li><a href="#day74">Day 74 – Beyond 100 Days</a></li>
+            <li><a href="#day75">Day 75 – The Last Page</a></li>
+            <li><a href="#day76">Day 76 – The Beam Revisited: 200 MN/m</a></li>
+            <li><a href="#day77">Day 77 – Applying the Framework at Work</a></li>
+            <li><a href="#day78">Day 78 – Applying the Framework in Relationships</a></li>
+            <li><a href="#day79">Day 79 – Applying the Framework to Creativity</a></li>
+            <li><a href="#day80">Day 80 – Applying the Framework to Health</a></li>
+            <li><a href="#day81">Day 81 – The Calm of Clarity</a></li>
+            <li><a href="#day82">Day 82 – Two Minds: Engineer and Poet</a></li>
+            <li><a href="#day83">Day 83 – The Mountain That Became a Beam</a></li>
+            <li><a href="#day84">Day 84 – A Letter to Your Future Self</a></li>
+            <li><a href="#day85">Day 85 – The Opposite of a Cantilever</a></li>
+            <li><a href="#day86">Day 86 – Teaching the Framework in One Hour</a></li>
+            <li><a href="#day87">Day 87 – The Frame of Not Knowing</a></li>
+            <li><a href="#day88">Day 88 – A Quiet Walk Through the Five Pillars</a></li>
+            <li><a href="#day89">Day 89 – The Last Beam Story</a></li>
+            <li><a href="#day90">Day 90 – Integration: Your Personal Manual</a></li>
+            <li><a href="#day91">Day 91 – The 5‑Minute Morning Ritual</a></li>
+            <li><a href="#day92">Day 92 – The Evening Reflection</a></li>
+            <li><a href="#day93">Day 93 – One Question for Each Pillar</a></li>
+            <li><a href="#day94">Day 94 – The Stuck Problem Clinic</a></li>
+            <li><a href="#day95">Day 95 – Why This Works (Cognitive Science)</a></li>
+            <li><a href="#day96">Day 96 – From Freshman to Master</a></li>
+            <li><a href="#day97">Day 97 – The 100th Morning</a></li>
+            <li><a href="#day98">Day 98 – What You Can Build Now</a></li>
+            <li><a href="#day99">Day 99 – The Gift of the Framework</a></li>
+            <li><a href="#day100">Day 100 – You Are Now the Framework</a></li>
+        </ul>
+    </div>
+
+    <!-- 100 DAYS -->
+    <!-- DAY 1 -->
+    <div class="day" id="day1">
+        <div class="day-number">Day 1</div>
+        <div class="day-title">The Trap of the First Answer</div>
+        <div class="day-content">
+            <p>You wake up. A problem waits. Your brain, eager to help, offers an answer almost immediately. It feels good to have an answer. Certainty is soothing.</p>
+            <p>But here is the quiet danger: <strong>the first answer is rarely the best answer.</strong> It is simply the most familiar one.</p>
+            <p>Imagine a beam stuck to a wall. Someone tells you it must hold 200 million newtons per meter. Your mind says: <em>"Make the beam bigger."</em> That is the first answer. It is not wrong. But it is incomplete.</p>
+            <p>The first answer closes doors. It says: <em>"This is the path."</em> And you stop looking.</p>
+            <p>Today, just notice when you catch yourself accepting the first answer. Do not judge it. Simply observe.</p>
+            <p><em>Later, you will learn to welcome the second, third, and tenth answers. But first, you must see the trap.</em></p>
+            <div class="takeaway">Why this matters: The quality of your solutions is limited by the number of solutions you consider. The first answer is a starting line, not a finish line.</div>
+            <div class="modern-dilemma">Modern dilemma: Your phone's notification bell is a constraint you never audited.</div>
+        </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day" id="day2">
+        <div class="day-number">Day 2</div>
+        <div class="day-title">The Illusion of the Single Constraint</div>
+        <div class="day-content">
+            <p>Most problems feel impossible because you fixate on one obstacle. You say: <em>"I cannot focus because my phone distracts me."</em> You say: <em>"I cannot save money because rent is high."</em> That is the illusion.</p>
+            <p>But every problem is a web. The beam with 200 MN/m is not just "too heavy." It is also: the wall might crack, the foundation might tilt, the steel might yield, the tip might sag.</p>
+            <p>When you name only one constraint, you see only one solution. When you name ten, you see ten paths.</p>
+            <p>Today, take a problem that feels stuck. Write down every constraint you can find — even silly ones. Do not judge. Just list.</p>
+            <div class="takeaway">A problem with one constraint is a dead end. A problem with many constraints is a map.</div>
+        </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day" id="day3">
+        <div class="day-number">Day 3</div>
+        <div class="day-title">Why "Bigger" Fails</div>
+        <div class="day-content">
+            <p>When something is not strong enough, the instinct is to make it larger. A thicker beam. A bigger team. A longer deadline. This works — until it doesn't.</p>
+            <p>There is a hidden law: <em>some things grow slower than the forces they must resist.</em> A beam’s strength grows with its width, but its weight grows with its volume. Double the size, and the weight multiplies by eight. At some point, the beam collapses under its own weight before the load even arrives.</p>
+            <p>In modern life, adding more people to a late project makes it later (Brooks’s law). Adding more features makes a product fragile. The solution is not always "more." Sometimes it is "different."</p>
+            <div class="takeaway">Scaling up is a habit. Scaling differently is a skill.</div>
+            <div class="modern-dilemma">The algorithm feeds you what you once clicked. It assumes you have not changed. Prove it wrong.</div>
+        </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day" id="day4">
+        <div class="day-number">Day 4</div>
+        <div class="day-title">The Wall in Your Head</div>
+        <div class="day-content">
+            <p>The beam is fixed to a wall. That wall seems permanent. But is it?</p>
+            <p>In your life, you have many walls. <em>"I cannot start because I am not ready."</em> <em>"I cannot change careers because I am too old."</em> These are not physical walls. They are mental ones. And mental walls can be moved.</p>
+            <p>A civil engineer looks at a wall and asks: <em>What is behind it? Could it be reinforced, shifted, or even removed?</em></p>
+            <p>Today, name one wall you have accepted as permanent. Then ask: <em>"If this wall disappeared tomorrow, what would I do differently?"</em></p>
+            <div class="takeaway">The strongest walls are the ones you never question.</div>
+        </div>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="day" id="day5">
+        <div class="day-number">Day 5</div>
+        <div class="day-title">Functional Fixedness</div>
+        <div class="day-content">
+            <p>You see a hammer. You think: nails. That is <em>functional fixedness</em> — the inability to see a tool for anything other than its default use.</p>
+            <p>A beam holds loads. But what if a beam could also be a pendulum, a counterweight, a symbol? In 1970, Apollo 13 engineers saw a square CO₂ filter and turned it into a round one using a sock, tape, and a manual cover. They broke fixedness.</p>
+            <p>Today, take one object or role in your life. List five uses it was not designed for. Your frustration can become fuel. Your quiet can become power.</p>
+            <div class="takeaway">The tool is not the task. The role is not the person.</div>
+        </div>
+    </div>
+
+    <!-- DAY 6 (Obama example) -->
+    <div class="day" id="day6">
+        <div class="day-number">Day 6</div>
+        <div class="day-title">How Rules Outlive Their Purpose</div>
+        <div class="day-content">
+            <p>A rule is born to solve a problem. The problem fades. The rule remains. No one questions it. It simply becomes <em>what we do</em>.</p>
+            <p>In your life, you inherit rules like <em>"I must finish college by 22"</em> or <em>"I must not change my mind after a decision."</em> Some of these still protect you. Others only protect a version of you that no longer exists.</p>
+            <p><em>Former President Barack Obama once described his decision‑making framework: he would identify his core principles first, then measure every rule against them. Rules that did not align were set aside — not out of defiance, but out of clarity.</em></p>
+            <p>Today, pick one rule you follow without thinking. Ask: <em>"What problem did this rule solve when it was created? Is that problem still here?"</em></p>
+            <div class="takeaway">Honor the rule by remembering why it was made. Then decide if it still deserves you.</div>
+        </div>
+    </div>
+
+    <!-- DAY 7 -->
+    <div class="day" id="day7">
+        <div class="day-number">Day 7</div>
+        <div class="day-title">The Expert's Curse</div>
+        <div class="day-content">
+            <p>The more you know, the harder it becomes to see what you do not know. This is the expert's curse.</p>
+            <p>An experienced bridge builder might reject a radical new material because "we have always used steel." A senior manager might dismiss a junior's idea because "it won't work."</p>
+            <p>But the beam does not care about your experience. It only cares about the load. Today, ask yourself: <em>"What would someone with no experience in this field try?"</em></p>
+            <div class="takeaway">Knowledge is a map. But the territory changes. Refresh your map often.</div>
+        </div>
+    </div>
+
+    <!-- DAY 8 -->
+    <div class="day" id="day8">
+        <div class="day-number">Day 8</div>
+        <div class="day-title">Normalization Sickness</div>
+        <div class="day-content">
+            <p>An extreme number, repeated often, becomes normal. That is normalization sickness. A 200 MN/m load seems absurd on Day 1. By Day 30, you might start thinking, <em>"Maybe just a little bigger beam."</em></p>
+            <p>This happens with stress, debt, and busyness. We adapt to what should alarm us. Today, look at one number in your life that you have accepted as normal. Ask: <em>"If I saw this for the first time, would I be worried?"</em></p>
+            <div class="takeaway">Normalcy is not safety. It is just familiarity.</div>
+        </div>
+    </div>
+
+    <!-- DAY 9 -->
+    <div class="day" id="day9">
+        <div class="day-number">Day 9</div>
+        <div class="day-title">The Five Biases (One Page)</div>
+        <div class="day-content">
+            <p>1. <strong>First‑answer bias</strong> – stopping at the first solution.<br>
+            2. <strong>Single‑constraint bias</strong> – ignoring other obstacles.<br>
+            3. <strong>Scaling blindness</strong> – thinking "more" always works.<br>
+            4. <strong>Functional fixedness</strong> – seeing only the default use.<br>
+            5. <strong>Boundary inertia</strong> – never questioning the frame.</p>
+            <p>These five biases are the roots of most stuckness. The five pillars of this book are their antidotes. Keep this page as a reference.</p>
+            <div class="takeaway">Name the bias, and you have already weakened it.</div>
+        </div>
+    </div>
+
+    <!-- DAY 10 -->
+    <div class="day" id="day10">
+        <div class="day-number">Day 10</div>
+        <div class="day-title">Your First Audit</div>
+        <div class="day-content">
+            <p>Look back at a recent failure — a missed deadline, a broken agreement, a project that never launched. Which of the five biases was most present?</p>
+            <p>Write it down. Do not fix anything yet. Just observe. This is your baseline.</p>
+            <p>By Day 100, you will return to this same failure and see it differently. Not because the failure changes, but because you have changed.</p>
+            <div class="takeaway">Auditing the past is not regret. It is calibration.</div>
+        </div>
+    </div>
+
+    <!-- DAYS 11–20: PILLAR 1 (Trace the Path) condensed for space but complete -->
+    <div class="day" id="day11"><div class="day-number">Day 11</div><div class="day-title">What Is a Path?</div><div class="day-content"><p>A path is the sequence of cause and effect from start to end. Every outcome has one. Most people only see the start and the end. The middle is where the solution lives.</p><div class="takeaway">Before you solve a problem, draw its path.</div></div></div>
+    <div class="day" id="day12"><div class="day-number">Day 12</div><div class="day-title">Drawing Arrows</div><div class="day-content"><p>Forces, information, emotions — all flow. Use arrows to show direction. A beam's load flows from the tip to the wall. Your anxiety might flow from a thought to a physical sensation. Trace it.</p><div class="takeaway">An arrow is worth a hundred words.</div></div></div>
+    <div class="day" id="day13"><div class="day-number">Day 13</div><div class="day-title">The Load Path Mindset</div><div class="day-content"><p>Ask constantly: <em>"Where is the 'weight' going right now?"</em> In a team, the weight might be responsibility. In a conversation, the weight might be blame. Trace it before you try to carry it.</p></div></div>
+    <div class="day" id="day14"><div class="day-number">Day 14</div><div class="day-title">Hidden Loops</div><div class="day-content"><p>Paths can circle back. You feel tired → you drink coffee → you sleep poorly → you feel more tired. That is a loop. Break the loop by finding where it started.</p></div></div>
+    <div class="day" id="day15"><div class="day-number">Day 15</div><div class="day-title">The Missing Step</div><div class="day-content"><p>Yesterday you were late. The missing step was not traffic. It was not finding your keys. It was not having a home for your keys. Fix the missing step, not the last step.</p><div class="takeaway">You cannot strengthen a chain until you see every link.</div></div></div>
+    <div class="day" id="day16"><div class="day-number">Day 16</div><div class="day-title">Tracing a Physical System</div><div class="day-content"><p>Your coffee mug from hand to floor: hand → slip → edge of table → wrong grip → distraction. Each link is a chance to intervene. Practice on physical things first.</p></div></div>
+    <div class="day" id="day17"><div class="day-number">Day 17</div><div class="day-title">Tracing a Social System</div><div class="day-content"><p>An argument: a harsh word → a raised voice → a slammed door. But before that: exhaustion → hunger → a long day at work. Trace past the obvious.</p></div></div>
+    <div class="day" id="day18"><div class="day-number">Day 18</div><div class="day-title">Tracing Your Own Habits</div><div class="day-content"><p>You reach for your phone. Trace back: buzz → notification → curiosity → boredom. The habit is not the phone. The habit is escaping boredom. Trace to find the real trigger.</p></div></div>
+    <div class="day" id="day19"><div class="day-number">Day 19</div><div class="day-title">The 30‑Second Test</div><div class="day-content"><p>Can you trace any linear process in under a minute? Practice on random things: making tea, sending an email, a morning routine. Speed comes from clarity.</p></div></div>
+    <div class="day" id="day20"><div class="day-number">Day 20</div><div class="day-title">Failure Mode: Missing the Start</div><div class="day-content"><p>Most people start the path too late. They begin at "I yelled at my partner" instead of "I slept four hours." Go back further. The real start is often quiet and small.</p></div></div>
+
+    <!-- DAYS 21–30: PILLAR 2 (Audit Constraints) condensed -->
+    <div class="day" id="day21"><div class="day-number">Day 21</div><div class="day-title">The Constraint Spectrum</div><div class="day-content"><p>Physics – Economics – Social – Personal – Imaginary. Know which is which. You cannot break gravity, but you can break "that's how we've always done it."</p></div></div>
+    <div class="day" id="day22"><div class="day-number">Day 22</div><div class="day-title">Spotting a Physical Law</div><div class="day-content"><p>It holds everywhere, every time. Gravity. Entropy. The speed of light. Do not fight these. Work around them.</p></div></div>
+    <div class="day" id="day23"><div class="day-number">Day 23</div><div class="day-title">Spotting a Social Rule</div><div class="day-content"><p>"We've always done it this way." "That's unprofessional." These are not laws; they are agreements. Agreements can be renegotiated.</p></div></div>
+    <div class="day" id="day24"><div class="day-number">Day 24</div><div class="day-title">Spotting a Self‑Limiting Belief</div><div class="day-content"><p>"I could never do that." "I'm not a math person." These feel like facts, but they are stories you have repeated. Challenge one today.</p><div class="takeaway">The cage is often unlocked. You forgot to try the door.</div></div></div>
+    <div class="day" id="day25"><div class="day-number">Day 25</div><div class="day-title">The Auditing Questions</div><div class="day-content"><p>Is it real? Who says? What if we ignore it? What would have to change for this rule to disappear? Ask these four questions every time you feel stuck.</p></div></div>
+    <div class="day" id="day26"><div class="day-number">Day 26</div><div class="day-title">The Loophole Mindset</div><div class="day-content"><p>Rules have edges. Find them. The 10‑meter cantilever code was written for wood beams. Now you have carbon fiber. The rule did not anticipate you. Be the exception.</p></div></div>
+    <div class="day" id="day27"><div class="day-number">Day 27</div><div class="day-title">Roleplay: Traditionalist vs. Rebel</div><div class="day-content"><p>In your mind, argue both sides. The traditionalist says, "The rule exists for a reason." The rebel says, "That reason may be gone." Listen to both. Then decide.</p></div></div>
+    <div class="day" id="day28"><div class="day-number">Day 28</div><div class="day-title">Auditing Your Job</div><div class="day-content"><p>List three rules at work (e.g., "meetings must be one hour"). Audit each. You may find that no one remembers why. Propose a change gently.</p></div></div>
+    <div class="day" id="day29"><div class="day-number">Day 29</div><div class="day-title">The 'What If' Generation</div><div class="day-content"><p>Take one constraint. Write ten ways to violate it. The first three will be silly. The seventh might be genius. Keep going.</p></div></div>
+    <div class="day" id="day30"><div class="day-number">Day 30</div><div class="day-title">Pillar 2 Self‑Test</div><div class="day-content"><p>Look at a problem you face today. List all constraints. Classify each as physical, social, personal, or imaginary. Then propose one violation of an imaginary rule.</p></div></div>
+
+    <!-- DAYS 31–40: PILLAR 3 (Scale the Magnitude) -->
+    <div class="day" id="day31"><div class="day-number">Day 31</div><div class="day-title">Why Normalization Kills Solutions</div><div class="day-content"><p>We tune out extreme numbers. A 200 MN/m load becomes "big." But "big" is not a number. Write it out: 200,000,000 N/m. Now it feels real.</p></div></div>
+    <div class="day" id="day32"><div class="day-number">Day 32</div><div class="day-title">The Scaling Ladder</div><div class="day-content"><p>Take any number. Multiply by 0.1, 1, 10, 100, 1000. Observe how relationships change. A $10 problem at 0.1× is $1 — trivial. At 1000× it is $10,000 — a different beast.</p></div></div>
+    <div class="day" id="day33"><div class="day-number">Day 33</div><div class="day-title">Quadratic and Cubic Scaling</div><div class="day-content"><p>Area scales with square, volume with cube. Double a beam's size → weight ×8, strength ×2. That is why big animals have thick legs. Respect the cube.</p></div></div>
+    <div class="day" id="day34"><div class="day-number">Day 34</div><div class="day-title">The Rocket Problem</div><div class="day-content"><p>To lift more fuel, you need more fuel. To lift that, even more fuel. At some point, the rocket cannot leave the ground. That is the tyranny of scaling. Learn to recognize it.</p></div></div>
+    <div class="day" id="day35"><div class="day-number">Day 35</div><div class="day-title">Natural Analogs</div><div class="day-content"><p>What handles extreme forces in nature? A tree trunk in wind. A bone under load. A spiderweb in a storm. Nature does not scale up; it changes shape.</p></div></div>
+    <div class="day" id="day36"><div class="day-number">Day 36</div><div class="day-title">Reverse Scaling</div><div class="day-content"><p>Solve the trivial version first (tiny load, tiny span). Then scale the solution up. What breaks? That tells you where the real problem lies.</p></div></div>
+    <div class="day" id="day37"><div class="day-number">Day 37</div><div class="day-title">The 10× Question</div><div class="day-content"><p>Ask: "What if the load were ten times larger?" Suddenly your current solution is laughable. That forces creativity. Ten times is a lever.</p></div></div>
+    <div class="day" id="day38"><div class="day-number">Day 38</div><div class="day-title">Scaling Time</div><div class="day-content"><p>A one‑hour task at 0.1× = six minutes. At 10× = ten hours. What changes? At ten hours, you need breaks. At six minutes, you can sprint. Time changes the method.</p></div></div>
+    <div class="day" id="day39"><div class="day-number">Day 39</div><div class="day-title">Scaling Money</div><div class="day-content"><p>A $10 decision is different from a $10,000 decision, which is different from a $10 million decision. At each scale, the process changes. Do not use a $10 mindset on a $10M problem.</p></div></div>
+    <div class="day" id="day40"><div class="day-number">Day 40</div><div class="day-title">Practice: Feeding a Family</div><div class="day-content"><p>Scale from 3 meals to 300 to 3,000. At 3, meals are intimate. At 3,000, you need a supply chain. The problem is not "more food." The problem is logistics.</p></div></div>
+
+    <!-- DAYS 41–50: PILLAR 4 (Switch the Medium) -->
+    <div class="day" id="day41"><div class="day-number">Day 41</div><div class="day-title">Medium Is Not Material</div><div class="day-content"><p>A medium is any tool, method, language, or format. When you are stuck, switch the medium. If writing fails, try speaking. If speaking fails, try drawing.</p></div></div>
+    <div class="day" id="day42"><div class="day-number">Day 42</div><div class="day-title">The Switch Matrix</div><div class="day-content"><p>If A fails, try B. If steel fails, try concrete. If concrete fails, try timber. If timber fails, try air (cable‑stayed). Build your own switch matrix for your domain.</p></div></div>
+    <div class="day" id="day43"><div class="day-number">Day 43</div><div class="day-title">Biomimicry</div><div class="day-content"><p>How does nature solve this? A cantilever in nature: a tree branch. It does not grow uniformly thick. It tapers. The highest stress is near the trunk, so it puts more material there. Copy that.</p></div></div>
+    <div class="day" id="day44"><div class="day-number">Day 44</div><div class="day-title">Cross‑Domain Transfer</div><div class="day-content"><p>How would a chef solve this? A soldier? A painter? A jazz musician? Each discipline has a unique problem‑solving pattern. Borrow freely.</p></div></div>
+    <div class="day" id="day45"><div class="day-number">Day 45</div><div class="day-title">The Opposite Test</div><div class="day-content"><p>What is the exact opposite of your current approach? Trying to be louder? Try silence. Trying to add? Try subtract. The opposite is often the overlooked solution.</p></div></div>
+    <div class="day" id="day46"><div class="day-number">Day 46</div><div class="day-title">Changing the Question</div><div class="day-content"><p>"How do I make the beam stronger?" → "How do I reduce the load?" → "How do I shorten the span?" The best medium switch is often a question switch.</p></div></div>
+    <div class="day" id="day47"><div class="day-number">Day 47</div><div class="day-title">Material Substitution</div><div class="day-content"><p>Steel → cardboard (thought experiment). If you can only use cardboard, how would you shape it? Corrugation. Folding. That same logic applies to steel. New material, new shape.</p></div></div>
+    <div class="day" id="day48"><div class="day-number">Day 48</div><div class="day-title">Method Substitution</div><div class="day-content"><p>Step‑by‑step planning → brute force trial and error → random inspiration. Try all three. The method is not sacred. The goal is sacred.</p></div></div>
+    <div class="day" id="day49"><div class="day-number">Day 49</div><div class="day-title">Case Study: Apollo 13</div><div class="day-content"><p>Square CO₂ filter, round hole. The engineers did not make a new filter. They used a bag, duct tape, a sock, and a manual cover. They switched the medium from "replace the part" to "adapt what you have."</p></div></div>
+    <div class="day" id="day50"><div class="day-number">Day 50</div><div class="day-title">The 'How Would a Child Solve This?'</div><div class="day-content"><p>A child would not know the rules. They would try anything. That is precisely the advantage. For five minutes, forbid yourself from using any "expert" knowledge. Be naive. It works.</p></div></div>
+
+    <!-- DAYS 51–60: PILLAR 5 (Expand the Boundary) -->
+    <div class="day" id="day51"><div class="day-number">Day 51</div><div class="day-title">The Boundary Fallacy</div><div class="day-content"><p>You draw a line around the problem. Why there? Why not ten meters further? Expand the boundary, and new solutions appear. The beam's wall is failing? Include the ground below the free end.</p></div></div>
+    <div class="day" id="day52"><div class="day-number">Day 52</div><div class="day-title">Level 0: The Thing Itself</div><div class="day-content"><p>Fix the beam. That is where most people start. But the beam is never alone.</p></div></div>
+    <div class="day" id="day53"><div class="day-number">Day 53</div><div class="day-title">Level 1: Direct Environment</div><div class="day-content"><p>The wall, the air temperature, the nearby supports. Expand to include what touches the beam.</p></div></div>
+    <div class="day" id="day54"><div class="day-number">Day 54</div><div class="day-title">Level 2: Supporting System</div><div class="day-content"><p>The foundation, the building, the ground. If the wall fails, maybe the ground can share the load.</p></div></div>
+    <div class="day" id="day55"><div class="day-number">Day 55</div><div class="day-title">Level 3: Time (Before and After)</div><div class="day-content"><p>What happened one year ago? A crack started then. What will happen in ten years? Maintenance. Include time in your boundary.</p></div></div>
+    <div class="day" id="day56"><div class="day-number">Day 56</div><div class="day-title">Level 4: Stakeholders and Rules</div><div class="day-content"><p>Who cares about this beam? The owner, the engineer, the safety inspector. What rules apply? Who made them? Can they change?</p></div></div>
+    <div class="day" id="day57"><div class="day-number">Day 57</div><div class="day-title">Level 5: Fundamental Purpose</div><div class="day-content"><p>What are we actually trying to achieve? A bridge? Or a way to get from A to B? If the goal is transportation, a tunnel or ferry also works. Expand to purpose.</p></div></div>
+    <div class="day" id="day58"><div class="day-number">Day 58</div><div class="day-title">The 'Who Decided?' Question</div><div class="day-content"><p>Someone set the boundary. Ask them why. Often the answer is "I don't know" or "That's just how we do it." That is permission to redraw the line.</p></div></div>
+    <div class="day" id="day59"><div class="day-number">Day 59</div><div class="day-title">Case Study: Traffic Jam</div><div class="day-content"><p>Level 0: fix the road. Level 1: add traffic lights. Level 2: improve public transit. Level 3: stagger work hours. Level 4: encourage remote work. Level 5: reduce the need to commute. Each level is a different solution.</p></div></div>
+    <div class="day" id="day60"><div class="day-number">Day 60</div><div class="day-title">Pillar 5 Self‑Test</div><div class="day-content"><p>Take a problem you face. Solve it at Level 2 (supporting system) and Level 4 (stakeholders). Compare solutions. The higher level often yields the simpler answer.</p></div></div>
+
+    <!-- DAYS 61–75: INTEGRATION AND REVIEW -->
+    <div class="day" id="day61"><div class="day-number">Day 61</div><div class="day-title">Trace the Path (Review)</div><div class="day-content"><p>Before you do anything else, trace the path. Draw the arrows. Find the missing step. This is always first.</p></div></div>
+    <div class="day" id="day62"><div class="day-number">Day 62</div><div class="day-title">Audit Constraints (Review)</div><div class="day-content"><p>Second, ask: which rules are real? Which are imaginary? Challenge one imaginary rule today.</p></div></div>
+    <div class="day" id="day63"><div class="day-number">Day 63</div><div class="day-title">Scale the Magnitude (Review)</div><div class="day-content"><p>Third, ask: what happens at 10×? At 0.1×? Scaling reveals hidden assumptions.</p></div></div>
+    <div class="day" id="day64"><div class="day-number">Day 64</div><div class="day-title">Switch the Medium (Review)</div><div class="day-content"><p>Fourth, if stuck, switch the medium. Change the material, the method, the language, or the question.</p></div></div>
+    <div class="day" id="day65"><div class="day-number">Day 65</div><div class="day-title">Expand the Boundary (Review)</div><div class="day-content"><p>Fifth, expand the boundary. Include more system, more time, more stakeholders. The solution often lives outside your first frame.</p></div></div>
+
+    <!-- DAYS 66–75: BUILDING THE RITUAL -->
+    <div class="day" id="day66"><div class="day-number">Day 66</div><div class="day-title">The Five‑Pillar Daily Ritual</div><div class="day-content"><p>Every morning: recite the five pillars. Then pick one small problem and run it through all five. Takes five minutes. Do this for 30 days and it becomes automatic.</p></div></div>
+    <div class="day" id="day67"><div class="day-number">Day 67</div><div class="day-title">The Failure Log</div><div class="day-content"><p>Keep a log of when you revert to default thinking. Do not feel shame. Just note it. "Today I accepted the first answer." Awareness is the first step to change.</p></div></div>
+    <div class="day" id="day68"><div class="day-number">Day 68</div><div class="day-title">The Question Bank</div><div class="day-content"><p>Write down 50 go‑to questions: Where is the load going? What if this constraint vanished? What happens at 10×? How would nature solve this? Keep the list handy.</p></div></div>
+    <div class="day" id="day69"><div class="day-number">Day 69</div><div class="day-title">Teaching One Pillar</div><div class="day-content"><p>Teach one pillar to a friend or colleague. Teaching forces clarity. You will discover gaps in your own understanding.</p></div></div>
+    <div class="day" id="day70"><div class="day-number">Day 70</div><div class="day-title">The Blink Test</div><div class="day-content"><p>Face a new problem. Which pillar activates first? Do not force it. Observe your instinct. That instinct is your growing framework.</p></div></div>
+    <div class="day" id="day71"><div class="day-number">Day 71</div><div class="day-title">The Meta‑Framework</div><div class="day-content"><p>The framework applies to itself. Ask: where is the missing step in my own thinking? What constraint am I not auditing in my life? Improve the framework as you use it.</p></div></div>
+    <div class="day" id="day72"><div class="day-number">Day 72</div><div class="day-title">When to Break the Framework</div><div class="day-content"><p>Sometimes the first answer is fine. Sometimes the obvious solution works. The framework is not a cage. It is a tool. Use it when you are stuck. Set it aside when you are not.</p></div></div>
+    <div class="day" id="day73"><div class="day-number">Day 73</div><div class="day-title">The 100‑Day Review</div><div class="day-content"><p>Find the problem you wrote on Day 10. Re‑audit it with the five pillars. You will see things you missed. That is not because you were foolish. It is because you have grown.</p></div></div>
+    <div class="day" id="day74"><div class="day-number">Day 74</div><div class="day-title">Beyond 100 Days</div><div class="day-content"><p>The mindset does not expire. Keep the daily ritual. Keep the failure log. Every year, reread Day 9 (The Five Biases). Refresh the framework.</p></div></div>
+    <div class="day" id="day75"><div class="day-number">Day 75</div><div class="day-title">The Last Page (For Now)</div><div class="day-content"><p>You have traveled from a 200 MN/m beam to the shape of your own thinking. The beam is still there. But now you see it differently. That is all mastery is: seeing differently.</p><div class="takeaway">You are now the framework.</div></div></div>
+
+    <!-- DAYS 76–100: ADVANCED APPLICATION AND STORIES -->
+    <div class="day" id="day76"><div class="day-number">Day 76</div><div class="day-title">The Beam Revisited: 200 MN/m</div><div class="day-content"><p>Go back to the original impossible load. Trace the path: force → beam → wall → foundation. Audit constraints: "cannot touch free end" – is that physics or preference? Scale: at 10× load, what happens? Switch medium: beam → arch → cable‑stayed mountain. Expand boundary: include underground anchor. Now the impossible feels merely difficult.</p></div></div>
+    <div class="day" id="day77"><div class="day-number">Day 77</div><div class="day-title">Applying the Framework at Work</div><div class="day-content"><p>A missed deadline: trace the path from today to the first delay. Audit constraints: "we must use this software" – why? Scale: what if the team were half as large? Switch medium: waterfall → agile. Expand boundary: include client's real needs. The deadline becomes achievable.</p></div></div>
+    <div class="day" id="day78"><div class="day-number">Day 78</div><div class="day-title">Applying the Framework in Relationships</div><div class="day-content"><p>A repeated argument: trace the emotional path from trigger to explosion. Audit: "we never talk about money" – is that a rule or a fear? Scale: what if this argument happened every day? Switch medium: text → face‑to‑face → letter. Expand boundary: include what happened earlier that day. You will find the real issue is not the surface one.</p></div></div>
+    <div class="day" id="day79"><div class="day-number">Day 79</div><div class="day-title">Applying the Framework to Creativity</div><div class="day-content"><p>Creative block: trace the path from idea to blank page. Audit: "I must write something good" – that is a constraint. Scale: what if you had to write 100 bad pages? Switch medium: keyboard → pen → voice. Expand boundary: include reading, walking, showering. Creativity is not a tap. It is a garden. Water differently.</p></div></div>
+    <div class="day" id="day80"><div class="day-number">Day 80</div><div class="day-title">Applying the Framework to Health</div><div class="day-content"><p>Cannot exercise: trace the path from intention to couch. Audit: "I need a full hour" – that is a rule. Scale: what if exercise took 1 minute? Switch medium: gym → living room → stairs. Expand boundary: include sleep, stress, diet. The missing step is often small and boring. Find it.</p></div></div>
+    <div class="day" id="day81"><div class="day-number">Day 81</div><div class="day-title">The Calm of Clarity</div><div class="day-content"><p>Panic is not knowing where to start. The framework gives you a starting place. Even if you do not solve the problem, you will feel calmer. Because you are no longer staring at a wall. You are tracing a path.</p></div></div>
+    <div class="day" id="day82"><div class="day-number">Day 82</div><div class="day-title">Two Minds: Engineer and Poet</div><div class="day-content"><p>The engineer traces loads. The poet traces emotions. You need both. The framework is not cold. It is a way to see clearly so that you can act warmly.</p></div></div>
+    <div class="day" id="day83"><div class="day-number">Day 83</div><div class="day-title">The Mountain That Became a Beam</div><div class="day-content"><p>A mountain is a cantilever of rock. It holds itself up for millions of years. It does not use steel or concrete. It uses shape, gravity, and time. Your 200 MN/m beam? Build a mountain. That is not a joke. It is a reminder: the answer may be bigger than the problem.</p></div></div>
+    <div class="day" id="day84"><div class="day-number">Day 84</div><div class="day-title">A Letter to Your Future Self</div><div class="day-content"><p>Write a one‑page letter: "Dear me in one year, remember the five pillars. Do not accept the first answer. Expand the boundary. You are the framework." Seal it. Open it in a year.</p></div></div>
+    <div class="day" id="day85"><div class="day-number">Day 85</div><div class="day-title">The Opposite of a Cantilever</div><div class="day-content"><p>A cantilever sticks out. The opposite is a hole — a cavity in the ground. Sometimes the solution is not to build up, but to dig down. If the load cannot be held above, maybe it can be held below.</p></div></div>
+    <div class="day" id="day86"><div class="day-number">Day 86</div><div class="day-title">Teaching the Framework in One Hour</div><div class="day-content"><p>Can you explain the five pillars to someone in 60 minutes? Try. Use the beam as a story. Use a personal example. Teaching is the final test of mastery.</p></div></div>
+    <div class="day" id="day87"><div class="day-number">Day 87</div><div class="day-title">The Frame of Not Knowing</div><div class="day-content"><p>The framework is not about having answers. It is about being comfortable with not knowing. When you do not know, you trace, audit, scale, switch, expand. You move. Stuckness is stillness. The framework is motion.</p></div></div>
+    <div class="day" id="day88"><div class="day-number">Day 88</div><div class="day-title">A Quiet Walk Through the Five Pillars</div><div class="day-content"><p>Go for a walk. As you walk, look at something ordinary — a fence, a tree, a bench. Run the five pillars in your head. Trace its load path. Audit its constraints. Scale it. Switch its material. Expand its boundary. This is not work. This is play.</p></div></div>
+    <div class="day" id="day89"><div class="day-number">Day 89</div><div class="day-title">The Last Beam Story</div><div class="day-content"><p>There is a beam in a forgotten building. It has held its load for fifty years. No one thinks about it. It just works. That is the goal of the framework: not to be noticed, but to work quietly in the background of your mind. So that when a real problem comes, you are ready without effort.</p></div></div>
+    <div class="day" id="day90"><div class="day-number">Day 90</div><div class="day-title">Integration: Your Personal Manual</div><div class="day-content"><p>By now, you have your own version of the framework. Write it down. What are your five pillars? They may be slightly different from mine. That is good. The framework is a seed, not a blueprint.</p></div></div>
+
+    <!-- DAYS 91–100: FINAL MASTERY -->
+    <div class="day" id="day91"><div class="day-number">Day 91</div><div class="day-title">The 5‑Minute Morning Ritual</div><div class="day-content"><p>Every morning: 1) Trace the path of your first task. 2) Audit one constraint. 3) Scale the key number. 4) Consider one medium switch. 5) Expand the boundary one level. Do this while coffee brews. It costs nothing and changes everything.</p></div></div>
+    <div class="day" id="day92"><div class="day-number">Day 92</div><div class="day-title">The Evening Reflection</div><div class="day-content"><p>Before sleep: what problem did you solve today? Which pillar helped most? Where did you revert to default? This is not a report card. It is a gentle nudge. Over time, the nudge becomes a habit.</p></div></div>
+    <div class="day" id="day93"><div class="day-number">Day 93</div><div class="day-title">One Question for Each Pillar</div><div class="day-content"><p>Trace: "What is the sequence from start to now?" Audit: "Which rule is imaginary?" Scale: "What if this were 10× larger?" Switch: "What is the opposite medium?" Expand: "What is one level higher?" Keep these five questions on a sticky note.</p></div></div>
+    <div class="day" id="day94"><div class="day-number">Day 94</div><div class="day-title">The Stuck Problem Clinic</div><div class="day-content"><p>Take a problem that has been stuck for months. Write it at the top of a page. Then, without trying to solve it, write down the answer to each of the five questions from Day 93. You will likely see a new path. Not because the problem changed, but because you did.</p></div></div>
+    <div class="day" id="day95"><div class="day-number">Day 95</div><div class="day-title">Why This Works (Cognitive Science)</div><div class="day-content"><p>The five pillars override five cognitive biases: causal reductionism, status quo bias, anchoring, functional fixedness, and bounded rationality. You are not learning "steps." You are learning to catch your brain in the act of taking shortcuts. That is the essence of metacognition.</p></div></div>
+    <div class="day" id="day96"><div class="day-number">Day 96</div><div class="day-title">From Freshman to Master</div><div class="day-content"><p>A freshman knows the steps. A master has forgotten the steps and sees only the structure. You are moving from freshman to master. The pages of this book are your training wheels. Soon you will ride without them.</p></div></div>
+    <div class="day" id="day97"><div class="day-number">Day 97</div><div class="day-title">The 100th Morning</div><div class="day-content"><p>On the morning of Day 100, you will wake up and face a problem. Before you think, you will ask: "Where is the load going?" That is not a trick. That is the framework living in you. Celebrate quietly. Then get to work.</p></div></div>
+    <div class="day" id="day98"><div class="day-number">Day 98</div><div class="day-title">What You Can Build Now</div><div class="day-content"><p>With this mindset, you can build beams that hold impossible loads. But more importantly, you can build teams that don't break, relationships that bend without snapping, and a life that flexes under pressure. The cantilever mindset is not about engineering. It is about grace under load.</p></div></div>
+    <div class="day" id="day99"><div class="day-number">Day 99</div><div class="day-title">The Gift of the Framework</div><div class="day-content"><p>The real gift is not that you can solve problems. It is that you no longer fear them. Fear comes from the unknown. The framework makes the unknown into a series of questions. And questions are friendly. They are invitations, not attacks.</p></div></div>
+    <div class="day" id="day100"><div class="day-number">Day 100</div><div class="day-title">You Are Now the Framework</div>
+        <div class="day-content">
+            <p>This is the last page. There is no more instruction. You have what you need. The beam is still there. The wall is still there. The load has not changed. But you have.</p>
+            <p>Now go find an impossible problem. And smile.</p>
+            <div class="takeaway"><em>Trace the path. Audit the rules. Scale the numbers. Switch the medium. Expand the edge.</em> You are ready.</div>
+        </div>
+    </div>
+
+    <footer>
+        The Cantilever Mindset – 100 days, one page per day. You did it.
+    </footer>
+</div>
+</body>
+</html>
